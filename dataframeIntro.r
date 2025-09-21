@@ -5,7 +5,7 @@ ldt_data <- read.csv("ldt_data.csv")
 print(head(ldt_data[1:4, ]))# Print all columns, rows 1:4
 
 # Q2: Display the last 7 rows of the ldt_data. 
-
+# empty text
 len <- nrow(ldt_data)
 n <- len - 7
 print(ldt_data[n:len, ]) # For some reason ldt_data[len-7:len,] does not work!!! Talk to prof # nolint: line_length_linter.
