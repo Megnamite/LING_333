@@ -8,7 +8,6 @@ print(head(ldt_data[1:4, ]))# Print all columns, rows 1:4
 
 len <- nrow(ldt_data)
 n <- len - 7
-print(len)
 print(ldt_data[n:len, ]) # For some reason ldt_data[len-7:len,] does not work!!! Talk to prof # nolint: line_length_linter.
 
 # Q3: View the summary statistics for the “Freq” column only using summary().
