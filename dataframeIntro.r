@@ -18,7 +18,7 @@ print(summary(ldt_data$Freq))
 print("Q4: Create a new column named “Freq_Doubled” that contains twice the values of the “Freq” column.")
 
 freq_double <- c(ldt_data$Freq) * 2 # New vector with doubled values
-doubles_ldt_data <- cbind(ldt_data, "Freq_Doubled" = freqDouble) #cbind() to add a new column
+doubles_ldt_data <- cbind(ldt_data, "Freq_Doubled" = freq_double) #cbind() to add a new column
 print(doubles_ldt_data)
 
 print("Q5: Create a for loop to iterate through each element in the “Length” column and print the length of each word.")
@@ -79,4 +79,5 @@ for (i in seq_len(length(Length_20_v_sub))){
     if (Length_20_v_sub[i]<180){
         print(Length_20_v_sub[i])
     }
+
 }
