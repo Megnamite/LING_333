@@ -1,7 +1,7 @@
 # Q.1 Display the first 4 rows of the ldt_data using head() function.
 library(tidyverse)
 ldt_data <- read.csv("ldt_data.csv")
-?ldt_data
+
 print(head(ldt_data[1:4, ]))# Print all columns, rows 1:4
 
 # Q2: Display the last 7 rows of the ldt_data. 
@@ -44,6 +44,16 @@ print(ldt_data$Mean_RT[which(mean_RT == min(mean_RT))])
 # which(mean_RT == min(mean_RT)) finds the index of the minimum value
 # Print the value at the minimum index of the row
 
+#His Solution
+min_RT <- min(ldt_data$Mean_RT)
+#if (min_RT < 600){
+#   print("smaller")
+#} else{
+#   print("not smaller")
+#}
+
+# A bit simpler?
+
 print("Q8: Write a code to check if the minimum value you got is smaller than 600.")
 # Q8: Write a code to check if the minimum value you got is smaller than 600
 
@@ -54,6 +64,7 @@ if (minimumMean > 600) {
 } else { #HAS TO BE INLINE WITH CLOSING THE IF STATEMENT
     print("smaller")
 }
+
 
 # Q9:Question:
 # a. Create a new column by multiplying each value in the Length variable by 20 and store it as a column
@@ -71,12 +82,17 @@ print(lenIncLtdData)
 
 # Q9 C:
 Length_20_v_sub <- c(Length_20_v[21:30])
-print(Length_20_v_sub) 
+print(Length_20_v_sub)
 
 # Q9 D:
 for (i in seq_len(length(Length_20_v_sub))){
-    if (Length_20_v_sub[i]<180){ # If the value is smaller than 180 print
+    if (Length_20_v_sub[i]<180){
         print(Length_20_v_sub[i])
     }
-
 }
+#His Solution: Remember you can just directly access vector items with "in"
+#for (i in Length_20_v_sub) {
+#   if (i < 180) {
+#       print(i)
+#   }
+#}
