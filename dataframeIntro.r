@@ -1,7 +1,7 @@
 # Q.1 Display the first 4 rows of the ldt_data using head() function.
 library(tidyverse)
 ldt_data <- read.csv("ldt_data.csv")
-
+?ldt_data
 print(head(ldt_data[1:4, ]))# Print all columns, rows 1:4
 
 # Q2: Display the last 7 rows of the ldt_data. 
@@ -55,7 +55,6 @@ if (minimumMean > 600) {
     print("smaller")
 }
 
-
 # Q9:Question:
 # a. Create a new column by multiplying each value in the Length variable by 20 and store it as a column
 # named Length_20
@@ -72,11 +71,11 @@ print(lenIncLtdData)
 
 # Q9 C:
 Length_20_v_sub <- c(Length_20_v[21:30])
-print(Length_20_v_sub)
+print(Length_20_v_sub) 
 
 # Q9 D:
 for (i in seq_len(length(Length_20_v_sub))){
-    if (Length_20_v_sub[i]<180){
+    if (Length_20_v_sub[i]<180){ # If the value is smaller than 180 print
         print(Length_20_v_sub[i])
     }
 
