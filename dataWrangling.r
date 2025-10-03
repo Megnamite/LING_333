@@ -29,6 +29,8 @@ mutate(ldt_data, Length_10 = Length*10) # Need notes on mutate function
 
 mutate(ldt_data, Length_Freq_Ratio = Length/Freq)
 
+mutate(ldt_data, Length_type_2 = if_else(Length > 8, "LONG", "SHORT"))
+# If data in Length is greater than 8, print LONG, else print SHORT
 
 df1 <- filter(ldt_data, Length < 9)
 df2 <- mutate(df1, Length_2 = Length * 20)
