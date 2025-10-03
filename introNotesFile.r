@@ -140,4 +140,3 @@ print(fruit[-3])
 # e.g.
 print(fruit[7]) # Returns NA
 
-
