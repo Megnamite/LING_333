@@ -140,3 +140,9 @@ print(fruit[-3])
 # e.g.
 print(fruit[7]) # Returns NA
 
+# Binary Logical Operators
+# & 	Element-wise Logical AND operator. Returns TRUE if both elements are TRUE
+# && 	Logical AND operator - Returns TRUE if both statements are TRUE
+# | 	Elementwise- Logical OR operator. Returns TRUE if one of the statements is TRUE
+# || 	Logical OR operator. Returns TRUE if one of the statements is TRUE
+# !     Logical NOT - Returns FALSE if statement is TRUE, used as negation
