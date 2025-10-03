@@ -11,6 +11,7 @@ filter(ldt_data, RT_speed == "fast")
 
 # New datatable produced from list
 ldt_data_2 <- filter(ldt_data, RT_speed == "fast")
+mean(ldt_data_2$Length) # Mean of length for all fast speed rows
 
 # Can also use numeric or binary comparisons
 filter(ldt_data, Length != 9) # ! is inverse operator as normal
@@ -23,6 +24,8 @@ filter(ldt_data, Length < 6 | Length > 11)
 
 mutate(ldt_data, Length_10 = Length*10) # Need notes on mutate function
 # Basically just adds a new column called $Length_10 which is $Length multiplied by 10
+# If instead of Length_10 we wrote length = length*10, 
+# Then it would replace all values in $Length with Length * 10 
 
 mutate(ldt_data, Length_Freq_Ratio = Length/Freq)
 
