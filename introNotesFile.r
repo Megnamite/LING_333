@@ -146,3 +146,6 @@ print(fruit[7]) # Returns NA
 # | 	Elementwise- Logical OR operator. Returns TRUE if one of the statements is TRUE
 # || 	Logical OR operator. Returns TRUE if one of the statements is TRUE
 # !     Logical NOT - Returns FALSE if statement is TRUE, used as negation
+
+x = y # This changes the value of X to equal Y, same as x <- y
+x == y # This compares the values of X and Y, returns TRUE iff X is the same exact value as Y, 
