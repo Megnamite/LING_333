@@ -10,8 +10,13 @@ f = open(csvfilepath, 'w', newline = '')
 fieldname = ['phone', 'minTime', 'maxTime']
 dictWriter = csv.DictWriter(f, fieldnames=fieldname)
 dictWriter.writeheader()
+vowels = 'ioaeu'
+
 for x in range(len(tg[3])):
-    print(x)
+   # print(x)
     if tg[3][x].mark == 'k':
-        dictWriter.writerow({'phone': str(tg[3][x].mark), 'minTime': str(tg[3][x].minTime), 'maxTime': str(tg[3][x].maxTime)})
+        if str(tg[3][x-1].mark)[0] in vowels:
+            if str(tg[3][x+1].mark)[0] in vowels:
+                print('intervocalic K found')  
+                dictWriter.writerow({'phone': str(tg[3][x].mark), 'minTime': str(tg[3][x].minTime), 'maxTime': str(tg[3][x].maxTime)})
 f.close()
