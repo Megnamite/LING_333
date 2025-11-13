@@ -1,11 +1,10 @@
 import textgrid
 import csv
 
-
 #Original filepath, csv output, and new textgrid output
-filepath = r"D:\\UBC Coding Environment\VIsual Studio\LING_333-1\333_Final_Project\SpiCE Textgrids\VF19A\VF19A_Cantonese_I2_20181114.TextGrid"
-csvfilepath = r"D:\\UBC Coding Environment\VIsual Studio\LING_333-1\333_Final_Project\SpiCE Textgrids\VF19A\VF19A.csv"
-tgout = r"D:\\UBC Coding Environment\VIsual Studio\LING_333-1\333_Final_Project\SpiCE Textgrids\VF19A\VF19A_intervocalic.Textgrid"
+filepath = r"D:\\UBC Coding Environment\VIsual Studio\LING_333-1\333_Final_Project\SpiCE Textgrids\VM34A\VM34A_Cantonese_I1_20191028.TextGrid"
+csvfilepath = r"D:\\UBC Coding Environment\VIsual Studio\LING_333-1\333_Final_Project\SpiCE Textgrids\VM34A\VM34A.csv"
+tgout = r"D:\\UBC Coding Environment\VIsual Studio\LING_333-1\333_Final_Project\SpiCE Textgrids\VM34A\VM34A_intervocalic.TextGrid"
 
 tg = textgrid.TextGrid.fromFile(filepath)
 f = open(csvfilepath, 'w', newline = '')#Open csv file, create new if not available
