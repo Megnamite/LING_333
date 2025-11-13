@@ -14,6 +14,6 @@ If you downloaded the files from this GitHub page you shouldn't need to download
 1. Change the `filepath` variable to your computers filepath to the original textgrid from the corpus.
 2. Change the `csvfilepath` variable to the CSV output, this will be found in a folder matching the speaker code. e.g. Speaker VF19A's CSV is found in folder VF19A.
 3. Change the `tgout` variable to the output intervocalic textgrid filepath, also found in the speakers matching folder.
-4. CMD/CTRl-A, run the code with the updated variables, and you should be done!
+4. CMD/CTRL-A, run the code with the updated variables, and you should be done!
 
 ### **Any changes you make or files you add should added to a branch, not committed to main!!**
