@@ -34,11 +34,11 @@ for x in range(len(tg[3])):
                         'minTime': str(tg[3][x].minTime), 
                         'maxTime': str(tg[3][x].maxTime)
                     })
-                    if currentMark == 'k':
+                    if currentMark in 'kK':
                        kTally += 1 
                     if currentMark == 'kw':
                         kwTally += 1
-                    if currentMark == 'g':
+                    if currentMark in 'gG':
                         gTally += 1 
                     if currentMark == 'gw':
                         gwTally += 1
