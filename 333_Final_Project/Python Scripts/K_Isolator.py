@@ -2,9 +2,9 @@ import textgrid
 import csv
 
 #Original filepath, csv output, and new textgrid output
-filepath = r"D:\\UBC Coding Environment\VIsual Studio\LING_333-1\333_Final_Project\SpiCE Textgrids\VM34A\VM34A_Cantonese_I1_20191028.TextGrid"
-csvfilepath = r"D:\\UBC Coding Environment\VIsual Studio\LING_333-1\333_Final_Project\SpiCE Textgrids\VM34A\VM34A.csv"
-tgout = r"D:\\UBC Coding Environment\VIsual Studio\LING_333-1\333_Final_Project\SpiCE Textgrids\VM34A\VM34A_intervocalic.TextGrid"
+filepath = r"D:\\UBC Coding Environment\VIsual Studio\LING_333-1\333_Final_Project\SpiCE Textgrids\VF19A\VF19A_English_I1_20181114.TextGrid"
+csvfilepath = r"D:\\UBC Coding Environment\VIsual Studio\LING_333-1\333_Final_Project\SpiCE Textgrids\VF19A\VF19A_E.csv"
+tgout = r"D:\\UBC Coding Environment\VIsual Studio\LING_333-1\333_Final_Project\SpiCE Textgrids\VF19A\VF19A_E_intervocalic.TextGrid"
 
 tg = textgrid.TextGrid.fromFile(filepath)
 f = open(csvfilepath, 'w', newline = '')#Open csv file, create new if not available
@@ -13,9 +13,9 @@ fieldname = ['phone', 'minTime', 'maxTime', 'k total', 'kw total', 'g total', 'g
 dictWriter = csv.DictWriter(f, fieldnames=fieldname)
 dictWriter.writeheader()
 #Initialising variables
-vowels = 'ioaeu'
+vowels = 'ioaeuIOAEU'
 kept_intervals = []
-targets = ['k', 'g', 'kw', 'gw']
+targets = ['k', 'g', 'kw', 'gw', 'K', 'G']
 kTally = 0
 kwTally = 0
 gTally = 0
