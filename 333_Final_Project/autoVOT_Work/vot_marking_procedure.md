@@ -12,4 +12,4 @@
 ## Marking VOT
 - Add a point to the textgrid at the start of voicing
 - Add a point to the textgrid at the point of closure release
-- add the text "vot" to the created interval
+- Change the interval marking to "vot"
