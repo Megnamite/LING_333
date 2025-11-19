@@ -13,3 +13,14 @@
 - Add a point to the textgrid at the start of voicing
 - Add a point to the textgrid at the point of closure release
 - Change the interval marking to "vot"
+- Start with "kw" tokens if the selected audio file contains one
+- To move straight to the token:
+  - Look at the time from the CSV file 
+    - Can use `cmd/ctrl + F` plus "kw" to find the exact interval time
+  - Open praat, go to `time -> set selection subcategory -> select -> put in start and end time of selection from the csv file -> ok`
+    - This will move the selection straight to the desired token
+      - Press `cmd/ctrl + N` to move the view window straight to the selected window
+  - Annotate VOT as specified above, with interval at start of voicing, interval at closure release, and add "vot" to the text
+    - If you do not add "vot" the training will not train off of the data!
+
+## Submitting data to GitHub
