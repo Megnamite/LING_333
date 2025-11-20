@@ -11,6 +11,7 @@
 
 ## Marking VOT
 - Add a point to the textgrid at the start of voicing
+  - This can be done either by clicking the circle on the appropriate tear by the cursor location, or selecting the desired location and pressing `enter` with the desired tier selected.
 - Add a point to the textgrid at the point of closure release
 - Change the interval marking to "vot"
 - Start with "kw" tokens if the selected audio file contains one
