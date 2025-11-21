@@ -96,3 +96,21 @@ for (i in seq_len(length(Length_20_v_sub))){
 #       print(i)
 #   }
 #}
+
+
+blah <- read.csv()#Insert file here
+Speakerlist <- c('s1', 's2', 's3')
+outputdf <- data.frame()
+
+for (n in blah$Speaker){
+    f1list <- c()
+    counter <- 1
+    for (i in seq_len(length(blah))){ # For however many rows in the master file
+        if (blah$Speaker[i] == Speakerlist[n]){ # If its the right speaker
+                append(f1list, counter, blah$f1[i]) #To meanlist, add the f1 at location "counter"
+                counter <- counter + 1 # Increase counter + 1
+        }
+    }
+    # This is where you calculate your mean and add it to your CSV
+    outputdf <- rbind(outputdf, c(blah$speaker, mean(f1list))
+} # nolint: error.
