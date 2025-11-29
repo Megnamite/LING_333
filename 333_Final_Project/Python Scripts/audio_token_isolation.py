@@ -49,8 +49,8 @@ def splitAudio(filepath, minTime, maxTime, outputpath = None, makeMono = None, s
     if minTime >= maxTime:
         raise ValueError("minTime must be less than maxTime.")
     
-    if (maxTime+30) - (minTime-30) < 128:
-        extracted = audio[minTime-30:minTime+98] # Dr.VOT requires minimum length of 128ms
+    if (maxTime+30) - (minTime-30) <= 128:
+        extracted = audio[minTime-30:minTime+99] # Dr.VOT requires minimum length of 128ms
     else:
         extracted = audio[minTime-30:maxTime+30] # Chodroff and wilson 2017
 

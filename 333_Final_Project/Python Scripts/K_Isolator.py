@@ -31,7 +31,7 @@ def getIsolatedTokens(filepath, csvfilepath, tgout):
     dictWriter.writeheader()
     #Initialising variables
     vowels = 'ioaeuIOAEU'
-    excludedTargets = ['i','o','a','e','u','I','O','A','E','U', 'spn']
+    excludedTargets = ['i','o','a','e','u','I','O','A','E','U', 'spn', 'ng', 'n']
     kept_intervals = []
     targets = ['k', 'g', 'kw', 'gw', 'K', 'G']
     kTally = 0
