@@ -6,6 +6,7 @@ import pandas as pd
 from pathlib import Path 
 from pydub import AudioSegment
 import platform
+import os
 
 def getContainingWord(phone_interval, word_tier):
     """
@@ -22,7 +23,7 @@ def getContainingWord(phone_interval, word_tier):
             return j
     return None
 
-def splitAudio(filepath, minTime, maxTime, outputpath = None):
+def splitAudio(filepath, minTime, maxTime, outputpath = None, makeMono = None, selectMonoChannel = None):
     """
     Function takes a segment of a larger audio file and extracts it, 
     returning an audio file unless output path is explicitly set
@@ -31,6 +32,8 @@ def splitAudio(filepath, minTime, maxTime, outputpath = None):
     :minTime: specifies the start of the clip you want to extract in s.
     :maxTime: specifies the end of the clip you want to extract in s.
     :outputpath: optional argument that specifies where the output should be saved to.
+    :makeMono: integer that decides whether or not the file should be exported as mono or stay as stereo, set to 1 if you want mono
+    :selectMonoChannel: Decides the mono channel, 0 = left, 1 = right.
     """
     audio = AudioSegment.from_file(filepath)
 
@@ -46,44 +49,40 @@ def splitAudio(filepath, minTime, maxTime, outputpath = None):
     if minTime >= maxTime:
         raise ValueError("minTime must be less than maxTime.")
     
-    extracted = audio[minTime:maxTime]
+    extracted = audio[minTime-30:maxTime+30] # Chodroff and wilson 2017
 
+    if makeMono == 1:
+        extracted = extracted.split_to_mono()
+    
     if outputpath:
+        extracted = extracted[selectMonoChannel]
         extracted.export(outputpath, format=outputpath.split('.')[-1])
         return None
 
     return extracted
 
 
-path_to_input = Path(r'C:\Users\Maria\Documents\UNI\Visual Studio UBC Workspace\LING333GithubClone\LING_333\333_Final_Project\SpiCE Textgrids')
-canto_audio_input_df = dir_to_df(path_to_input,
-                    fnpat= r"Cantonese.wav",
+path_to_input = Path(r'D:\UBC Coding Environment\VIsual Studio\LING_333-1\333_Final_Project')
+audio_input_df = dir_to_df(path_to_input,
+                    fnpat= r".wav",
+                    addcols = ["dirname", "barename", "ext"])
+    
+tg_input_df = dir_to_df(path_to_input,
+                    fnpat= ".Textgrid",
                     addcols = ["dirname", "barename", "ext"])
 
-eng_audio_input_df = dir_to_df(path_to_input,
-                    fnpat= r"English.wav",
-                    addcols = ["dirname", "barename", "ext"])
+audio_input_df.tail() # Get Dataframe of all files in directory
+tg_input_df.head()
+#eng_input_df.head()
 
-canto_input_df = dir_to_df(path_to_input,
-                    fnpat= "Cantonese.Textgrid",
-                    addcols = ["dirname", "barename", "ext"])
-
-eng_input_df = dir_to_df(path_to_input,
-                    fnpat= r'English\s+,.Textgrid',
-                    addcols = ["dirname", "barename", "ext"])
-
-
-#audio_input_df.tail() # Get Dataframe of all files in directory
-#canto_input_df.head()
-eng_input_df.head()
-
-for n in range(len(canto_input_df)):
-    print('importing audio from ' + str(canto_audio_input_df["dirname"][n]) + "\\" + str(canto_audio_input_df["barename"][n])[0:5] + "\\" + str(canto_audio_input_df["fname"][n]))
-    audioInputFile = str(canto_audio_input_df["dirname"][n]) + "\\" + str(canto_audio_input_df["barename"][n])[0:5] + "\\" + str(canto_audio_input_df["fname"][n])
-    audio_clip_file = str(canto_audio_input_df["dirname"][n]) + "\\" + str(canto_audio_input_df["barename"][n])[0:5] + "\\" + str(canto_audio_input_df["barename"][n])[0:5]
+for n in range(len(tg_input_df)):
+    audioInputFile = str(audio_input_df["dirname"][n]) + "\\" + 'SpiCE Textgrids\\' + str(audio_input_df["barename"][n])[0:5] + "\\" + str(audio_input_df["fname"][n])
+    audio_clip_file = str(audio_input_df["dirname"][n]) + "\\" + 'SpiCE Textgrids\\' + str(audio_input_df["barename"][n])[0:5]
+    print('importing audio from ' + audioInputFile)
                                                                     
-    tgin = str(canto_input_df["dirname"][n]) + "\\" + str(canto_audio_input_df["barename"][n])[0:5] + "\\" + str(canto_audio_input_df["fname"][n])
-
+    tgin = str(tg_input_df["dirname"][n]) + "\\" + 'SpiCE Textgrids\\' + str(audio_input_df["barename"][n])[0:5] + "\\"  + str(tg_input_df["fname"][n])
+    print('importing tg from ' + tgin)
+    
     tg = textgrid.TextGrid.fromFile(tgin)
     tgIsolatedPhones = tg[4]
     tgWords = tg[2]
@@ -97,10 +96,29 @@ for n in range(len(canto_input_df)):
     for x in range(len(tg[4])):
         if tgIsolatedPhones[x].mark in targets:
             idx = getContainingWord(tgIsolatedPhones[x], tgWords)
+            if "C" in audio_input_df["barename"][n]:
+                outputpath = f"{audio_clip_file}\\{str(audio_input_df['barename'][n])[0:5]}_C"
+                
+                if not os.path.isdir(outputpath):
+                    os.makedirs(outputpath)
+                    
+                outputfile = f"{outputpath}\\{str(audio_input_df['barename'][n])[0:5]}_C_clip({counter}).wav"
+                
+            elif "E" in audio_input_df["barename"][n]:
+                outputpath = f"{audio_clip_file}\\{str(audio_input_df['barename'][n])[0:5]}_E"
+                
+                if not os.path.isdir(outputpath):
+                    os.makedirs(outputpath)
+                    
+                outputfile = f"{outputpath}\\{str(audio_input_df['barename'][n])[0:5]}_E_clip({counter}).wav"    
+            else:
+                print('somethings gone wrong with the input files')
+                break       
             print("Splitting Audio")
             segment = splitAudio(str(audioInputFile), 
                     tgWords[idx].minTime, 
-                    tgWords[idx].maxTime)
-            segment.export(f"{audio_clip_file}\\{str(canto_audio_input_df['barename'][n])[0:5]}_clip({counter}).wav", format = "wav")
+                    tgWords[idx].maxTime,
+                    outputfile,
+                    1, 0)
             counter += 1
-
+print('Done splitting audio!')
