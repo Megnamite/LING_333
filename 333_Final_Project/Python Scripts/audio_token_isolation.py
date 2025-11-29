@@ -49,7 +49,10 @@ def splitAudio(filepath, minTime, maxTime, outputpath = None, makeMono = None, s
     if minTime >= maxTime:
         raise ValueError("minTime must be less than maxTime.")
     
-    extracted = audio[minTime-30:maxTime+30] # Chodroff and wilson 2017
+    if (maxTime+30) - (minTime-30) < 128:
+        extracted = audio[minTime-30:minTime+98] # Dr.VOT requires minimum length of 128ms
+    else:
+        extracted = audio[minTime-30:maxTime+30] # Chodroff and wilson 2017
 
     if makeMono == 1:
         extracted = extracted.split_to_mono()
@@ -75,7 +78,7 @@ audio_input_df.tail() # Get Dataframe of all files in directory
 tg_input_df.head()
 #eng_input_df.head()
 
-print(audio_input_df["barename"][5])
+#print(audio_input_df["barename"][5])
 
 for n in range(len(tg_input_df)):
     audioInputFile = str(audio_input_df["dirname"][n]) + "\\" + 'SpiCE Textgrids\\' + str(audio_input_df["barename"][n])[0:5] + "\\" + str(audio_input_df["fname"][n])
