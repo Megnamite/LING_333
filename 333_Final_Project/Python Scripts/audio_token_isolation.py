@@ -55,23 +55,34 @@ def splitAudio(filepath, minTime, maxTime, outputpath = None):
     return extracted
 
 
-path_to_input = Path(r'C:\Users\Maria\Documents\UNI\Visual Studio UBC Workspace\Other\Branch Work')
-audio_input_df = dir_to_df(path_to_input,
-                    fnpat= ".wav",
-                    addcols = ["dirname", "barename", "ext"])
-tg_input_df = dir_to_df(path_to_input,
-                    fnpat= ".Textgrid",
+path_to_input = Path(r'C:\Users\Maria\Documents\UNI\Visual Studio UBC Workspace\LING333GithubClone\LING_333\333_Final_Project\SpiCE Textgrids')
+canto_audio_input_df = dir_to_df(path_to_input,
+                    fnpat= r"Cantonese.wav",
                     addcols = ["dirname", "barename", "ext"])
 
-audio_input_df.tail() # Get Dataframe of all files in directory
-tg_input_df.head()
+eng_audio_input_df = dir_to_df(path_to_input,
+                    fnpat= r"English.wav",
+                    addcols = ["dirname", "barename", "ext"])
 
-for n in range(len(tg_input_df)):
-    print('importing audio from ' + str(audio_input_df["dirname"][n]) + "\\" + str(audio_input_df["barename"][n])[0:5] + "\\" + str(audio_input_df["fname"][n]))
-    audioInputFile = str(audio_input_df["dirname"][n]) + "\\" + str(audio_input_df["barename"][n])[0:5] + "\\" + str(audio_input_df["fname"][n])
-    audio_clip_file = str(audio_input_df["dirname"][n]) + "\\" + str(audio_input_df["barename"][n])[0:5] + "\\" + str(audio_input_df["barename"][n])[0:5]
+canto_input_df = dir_to_df(path_to_input,
+                    fnpat= "Cantonese.Textgrid",
+                    addcols = ["dirname", "barename", "ext"])
+
+eng_input_df = dir_to_df(path_to_input,
+                    fnpat= r'English\s+,.Textgrid',
+                    addcols = ["dirname", "barename", "ext"])
+
+
+#audio_input_df.tail() # Get Dataframe of all files in directory
+#canto_input_df.head()
+eng_input_df.head()
+
+for n in range(len(canto_input_df)):
+    print('importing audio from ' + str(canto_audio_input_df["dirname"][n]) + "\\" + str(canto_audio_input_df["barename"][n])[0:5] + "\\" + str(canto_audio_input_df["fname"][n]))
+    audioInputFile = str(canto_audio_input_df["dirname"][n]) + "\\" + str(canto_audio_input_df["barename"][n])[0:5] + "\\" + str(canto_audio_input_df["fname"][n])
+    audio_clip_file = str(canto_audio_input_df["dirname"][n]) + "\\" + str(canto_audio_input_df["barename"][n])[0:5] + "\\" + str(canto_audio_input_df["barename"][n])[0:5]
                                                                     
-    tgin = str(tg_input_df["dirname"][n]) + "\\" + str(audio_input_df["barename"][n])[0:5] + "\\" + str(tg_input_df["fname"][n])
+    tgin = str(canto_input_df["dirname"][n]) + "\\" + str(canto_audio_input_df["barename"][n])[0:5] + "\\" + str(canto_audio_input_df["fname"][n])
 
     tg = textgrid.TextGrid.fromFile(tgin)
     tgIsolatedPhones = tg[4]
@@ -90,6 +101,6 @@ for n in range(len(tg_input_df)):
             segment = splitAudio(str(audioInputFile), 
                     tgWords[idx].minTime, 
                     tgWords[idx].maxTime)
-            segment.export(f"{audio_clip_file}\\{str(audio_input_df['barename'][n])[0:5]}_clip({counter}).wav", format = "wav")
+            segment.export(f"{audio_clip_file}\\{str(canto_audio_input_df['barename'][n])[0:5]}_clip({counter}).wav", format = "wav")
             counter += 1
 
