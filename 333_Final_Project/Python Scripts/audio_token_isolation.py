@@ -75,6 +75,8 @@ audio_input_df.tail() # Get Dataframe of all files in directory
 tg_input_df.head()
 #eng_input_df.head()
 
+print(audio_input_df["barename"][5])
+
 for n in range(len(tg_input_df)):
     audioInputFile = str(audio_input_df["dirname"][n]) + "\\" + 'SpiCE Textgrids\\' + str(audio_input_df["barename"][n])[0:5] + "\\" + str(audio_input_df["fname"][n])
     audio_clip_file = str(audio_input_df["dirname"][n]) + "\\" + 'SpiCE Textgrids\\' + str(audio_input_df["barename"][n])[0:5]
@@ -96,7 +98,7 @@ for n in range(len(tg_input_df)):
     for x in range(len(tg[4])):
         if tgIsolatedPhones[x].mark in targets:
             idx = getContainingWord(tgIsolatedPhones[x], tgWords)
-            if "C" in audio_input_df["barename"][n]:
+            if "_C" in audio_input_df["barename"][n]:
                 outputpath = f"{audio_clip_file}\\{str(audio_input_df['barename'][n])[0:5]}_C"
                 
                 if not os.path.isdir(outputpath):
@@ -104,7 +106,7 @@ for n in range(len(tg_input_df)):
                     
                 outputfile = f"{outputpath}\\{str(audio_input_df['barename'][n])[0:5]}_C_clip({counter}).wav"
                 
-            elif "E" in audio_input_df["barename"][n]:
+            elif "_E" in audio_input_df["barename"][n]:
                 outputpath = f"{audio_clip_file}\\{str(audio_input_df['barename'][n])[0:5]}_E"
                 
                 if not os.path.isdir(outputpath):
