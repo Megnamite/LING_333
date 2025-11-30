@@ -58903,7 +58903,7 @@ item []:
 		name = "k isolation"
 		xmin = 0.0
 		xmax = 1533.96825
-		intervals: size = 331
+		intervals: size = 205
 			intervals [1]:
 				xmin = 0.0
 				xmax = 26.239
@@ -58914,1317 +58914,813 @@ item []:
 				text = "g"
 			intervals [3]:
 				xmin = 26.309
-				xmax = 112.695
-				text = ""
-			intervals [4]:
-				xmin = 112.695
-				xmax = 112.745
-				text = "g"
-			intervals [5]:
-				xmin = 112.745
 				xmax = 115.505
 				text = ""
-			intervals [6]:
+			intervals [4]:
 				xmin = 115.505
 				xmax = 115.575
 				text = "g"
-			intervals [7]:
+			intervals [5]:
 				xmin = 115.575
 				xmax = 117.514
 				text = ""
-			intervals [8]:
+			intervals [6]:
 				xmin = 117.514
 				xmax = 117.584
 				text = "k"
-			intervals [9]:
+			intervals [7]:
 				xmin = 117.584
-				xmax = 119.504
-				text = ""
-			intervals [10]:
-				xmin = 119.504
-				xmax = 119.554
-				text = "g"
-			intervals [11]:
-				xmin = 119.554
-				xmax = 121.044
-				text = ""
-			intervals [12]:
-				xmin = 121.044
-				xmax = 121.104
-				text = "g"
-			intervals [13]:
-				xmin = 121.104
 				xmax = 122.764
 				text = ""
-			intervals [14]:
+			intervals [8]:
 				xmin = 122.764
 				xmax = 122.814
 				text = "k"
-			intervals [15]:
+			intervals [9]:
 				xmin = 122.814
-				xmax = 130.297
-				text = ""
-			intervals [16]:
-				xmin = 130.297
-				xmax = 130.377
-				text = "k"
-			intervals [17]:
-				xmin = 130.377
 				xmax = 152.579
 				text = ""
-			intervals [18]:
+			intervals [10]:
 				xmin = 152.579
 				xmax = 152.619
 				text = "g"
-			intervals [19]:
+			intervals [11]:
 				xmin = 152.619
 				xmax = 202.945
 				text = ""
-			intervals [20]:
+			intervals [12]:
 				xmin = 202.945
 				xmax = 203.025
 				text = "g"
-			intervals [21]:
+			intervals [13]:
 				xmin = 203.025
 				xmax = 242.47
 				text = ""
-			intervals [22]:
+			intervals [14]:
 				xmin = 242.47
 				xmax = 242.51
 				text = "gw"
-			intervals [23]:
+			intervals [15]:
 				xmin = 242.51
 				xmax = 244.71
 				text = ""
-			intervals [24]:
+			intervals [16]:
 				xmin = 244.71
 				xmax = 244.77
 				text = "g"
-			intervals [25]:
+			intervals [17]:
 				xmin = 244.77
 				xmax = 280.835
 				text = ""
-			intervals [26]:
+			intervals [18]:
 				xmin = 280.835
 				xmax = 280.895
 				text = "k"
-			intervals [27]:
+			intervals [19]:
 				xmin = 280.895
-				xmax = 292.084
-				text = ""
-			intervals [28]:
-				xmin = 292.084
-				xmax = 292.214
-				text = "k"
-			intervals [29]:
-				xmin = 292.214
-				xmax = 296.161
-				text = ""
-			intervals [30]:
-				xmin = 296.161
-				xmax = 296.281
-				text = "k"
-			intervals [31]:
-				xmin = 296.281
 				xmax = 307.276
 				text = ""
-			intervals [32]:
+			intervals [20]:
 				xmin = 307.276
 				xmax = 307.396
 				text = "k"
-			intervals [33]:
+			intervals [21]:
 				xmin = 307.396
 				xmax = 328.776
 				text = ""
-			intervals [34]:
+			intervals [22]:
 				xmin = 328.776
 				xmax = 329.026
 				text = "k"
-			intervals [35]:
+			intervals [23]:
 				xmin = 329.026
-				xmax = 339.595
-				text = ""
-			intervals [36]:
-				xmin = 339.595
-				xmax = 339.645
-				text = "k"
-			intervals [37]:
-				xmin = 339.645
-				xmax = 346.569
-				text = ""
-			intervals [38]:
-				xmin = 346.569
-				xmax = 346.619
-				text = "g"
-			intervals [39]:
-				xmin = 346.619
 				xmax = 350.725
 				text = ""
-			intervals [40]:
+			intervals [24]:
 				xmin = 350.725
 				xmax = 350.825
 				text = "k"
-			intervals [41]:
+			intervals [25]:
 				xmin = 350.825
-				xmax = 353.765
-				text = ""
-			intervals [42]:
-				xmin = 353.765
-				xmax = 353.795
-				text = "g"
-			intervals [43]:
-				xmin = 353.795
-				xmax = 354.225
-				text = ""
-			intervals [44]:
-				xmin = 354.225
-				xmax = 354.275
-				text = "g"
-			intervals [45]:
-				xmin = 354.275
 				xmax = 371.667
 				text = ""
-			intervals [46]:
+			intervals [26]:
 				xmin = 371.667
 				xmax = 371.727
 				text = "k"
-			intervals [47]:
+			intervals [27]:
 				xmin = 371.727
-				xmax = 372.437
-				text = ""
-			intervals [48]:
-				xmin = 372.437
-				xmax = 372.477
-				text = "g"
-			intervals [49]:
-				xmin = 372.477
-				xmax = 373.567
-				text = ""
-			intervals [50]:
-				xmin = 373.567
-				xmax = 373.597
-				text = "g"
-			intervals [51]:
-				xmin = 373.597
 				xmax = 375.437
 				text = ""
-			intervals [52]:
+			intervals [28]:
 				xmin = 375.437
 				xmax = 375.487
 				text = "g"
-			intervals [53]:
+			intervals [29]:
 				xmin = 375.487
 				xmax = 377.927
 				text = ""
-			intervals [54]:
+			intervals [30]:
 				xmin = 377.927
 				xmax = 377.957
 				text = "k"
-			intervals [55]:
+			intervals [31]:
 				xmin = 377.957
 				xmax = 383.949
 				text = ""
-			intervals [56]:
+			intervals [32]:
 				xmin = 383.949
 				xmax = 384.009
 				text = "k"
-			intervals [57]:
+			intervals [33]:
 				xmin = 384.009
-				xmax = 384.319
-				text = ""
-			intervals [58]:
-				xmin = 384.319
-				xmax = 384.349
-				text = "g"
-			intervals [59]:
-				xmin = 384.349
 				xmax = 394.871
 				text = ""
-			intervals [60]:
+			intervals [34]:
 				xmin = 394.871
 				xmax = 394.921
 				text = "k"
-			intervals [61]:
+			intervals [35]:
 				xmin = 394.921
 				xmax = 398.491
 				text = ""
-			intervals [62]:
+			intervals [36]:
 				xmin = 398.491
 				xmax = 398.561
 				text = "k"
-			intervals [63]:
+			intervals [37]:
 				xmin = 398.561
-				xmax = 410.246
-				text = ""
-			intervals [64]:
-				xmin = 410.246
-				xmax = 410.326
-				text = "g"
-			intervals [65]:
-				xmin = 410.326
 				xmax = 430.461
 				text = ""
-			intervals [66]:
+			intervals [38]:
 				xmin = 430.461
 				xmax = 430.491
 				text = "g"
-			intervals [67]:
+			intervals [39]:
 				xmin = 430.491
-				xmax = 431.051
-				text = ""
-			intervals [68]:
-				xmin = 431.051
-				xmax = 431.111
-				text = "k"
-			intervals [69]:
-				xmin = 431.111
-				xmax = 435.332
-				text = ""
-			intervals [70]:
-				xmin = 435.332
-				xmax = 435.392
-				text = "g"
-			intervals [71]:
-				xmin = 435.392
-				xmax = 459.796
-				text = ""
-			intervals [72]:
-				xmin = 459.796
-				xmax = 459.826
-				text = "g"
-			intervals [73]:
-				xmin = 459.826
 				xmax = 482.614
 				text = ""
-			intervals [74]:
+			intervals [40]:
 				xmin = 482.614
 				xmax = 482.644
 				text = "g"
-			intervals [75]:
+			intervals [41]:
 				xmin = 482.644
 				xmax = 484.854
 				text = ""
-			intervals [76]:
+			intervals [42]:
 				xmin = 484.854
 				xmax = 484.984
 				text = "g"
-			intervals [77]:
+			intervals [43]:
 				xmin = 484.984
 				xmax = 486.027
 				text = ""
-			intervals [78]:
+			intervals [44]:
 				xmin = 486.027
 				xmax = 486.097
 				text = "k"
-			intervals [79]:
+			intervals [45]:
 				xmin = 486.097
 				xmax = 488.777
 				text = ""
-			intervals [80]:
+			intervals [46]:
 				xmin = 488.777
 				xmax = 488.857
 				text = "gw"
-			intervals [81]:
+			intervals [47]:
 				xmin = 488.857
 				xmax = 491.911
 				text = ""
-			intervals [82]:
+			intervals [48]:
 				xmin = 491.911
 				xmax = 491.981
 				text = "g"
-			intervals [83]:
+			intervals [49]:
 				xmin = 491.981
-				xmax = 495.542
-				text = ""
-			intervals [84]:
-				xmin = 495.542
-				xmax = 495.612
-				text = "gw"
-			intervals [85]:
-				xmin = 495.612
-				xmax = 508.219
-				text = ""
-			intervals [86]:
-				xmin = 508.219
-				xmax = 508.269
-				text = "gw"
-			intervals [87]:
-				xmin = 508.269
 				xmax = 543.995
 				text = ""
-			intervals [88]:
+			intervals [50]:
 				xmin = 543.995
 				xmax = 544.025
 				text = "g"
-			intervals [89]:
+			intervals [51]:
 				xmin = 544.025
 				xmax = 547.406
 				text = ""
-			intervals [90]:
+			intervals [52]:
 				xmin = 547.406
 				xmax = 547.436
 				text = "g"
-			intervals [91]:
+			intervals [53]:
 				xmin = 547.436
 				xmax = 549.241
 				text = ""
-			intervals [92]:
+			intervals [54]:
 				xmin = 549.241
 				xmax = 549.281
 				text = "g"
-			intervals [93]:
+			intervals [55]:
 				xmin = 549.281
 				xmax = 551.011
 				text = ""
-			intervals [94]:
+			intervals [56]:
 				xmin = 551.011
 				xmax = 551.051
 				text = "g"
-			intervals [95]:
+			intervals [57]:
 				xmin = 551.051
-				xmax = 582.597
-				text = ""
-			intervals [96]:
-				xmin = 582.597
-				xmax = 582.627
-				text = "g"
-			intervals [97]:
-				xmin = 582.627
 				xmax = 587.291
 				text = ""
-			intervals [98]:
+			intervals [58]:
 				xmin = 587.291
 				xmax = 587.401
 				text = "gw"
-			intervals [99]:
+			intervals [59]:
 				xmin = 587.401
 				xmax = 589.071
 				text = ""
-			intervals [100]:
+			intervals [60]:
 				xmin = 589.071
 				xmax = 589.101
 				text = "g"
-			intervals [101]:
+			intervals [61]:
 				xmin = 589.101
 				xmax = 589.921
 				text = ""
-			intervals [102]:
+			intervals [62]:
 				xmin = 589.921
 				xmax = 590.001
 				text = "g"
-			intervals [103]:
+			intervals [63]:
 				xmin = 590.001
-				xmax = 594.108
-				text = ""
-			intervals [104]:
-				xmin = 594.108
-				xmax = 594.138
-				text = "g"
-			intervals [105]:
-				xmin = 594.138
 				xmax = 603.619
 				text = ""
-			intervals [106]:
+			intervals [64]:
 				xmin = 603.619
 				xmax = 603.659
 				text = "g"
-			intervals [107]:
+			intervals [65]:
 				xmin = 603.659
 				xmax = 611.97
 				text = ""
-			intervals [108]:
+			intervals [66]:
 				xmin = 611.97
 				xmax = 612.02
 				text = "g"
-			intervals [109]:
+			intervals [67]:
 				xmin = 612.02
-				xmax = 619.676
-				text = ""
-			intervals [110]:
-				xmin = 619.676
-				xmax = 619.706
-				text = "g"
-			intervals [111]:
-				xmin = 619.706
 				xmax = 620.306
 				text = ""
-			intervals [112]:
+			intervals [68]:
 				xmin = 620.306
 				xmax = 620.366
 				text = "g"
-			intervals [113]:
+			intervals [69]:
 				xmin = 620.366
 				xmax = 621.186
 				text = ""
-			intervals [114]:
+			intervals [70]:
 				xmin = 621.186
 				xmax = 621.216
 				text = "g"
-			intervals [115]:
+			intervals [71]:
 				xmin = 621.216
-				xmax = 642.196
-				text = ""
-			intervals [116]:
-				xmin = 642.196
-				xmax = 642.256
-				text = "g"
-			intervals [117]:
-				xmin = 642.256
-				xmax = 642.746
-				text = ""
-			intervals [118]:
-				xmin = 642.746
-				xmax = 642.836
-				text = "k"
-			intervals [119]:
-				xmin = 642.836
 				xmax = 649.071
 				text = ""
-			intervals [120]:
+			intervals [72]:
 				xmin = 649.071
 				xmax = 649.131
 				text = "k"
-			intervals [121]:
+			intervals [73]:
 				xmin = 649.131
 				xmax = 651.331
 				text = ""
-			intervals [122]:
+			intervals [74]:
 				xmin = 651.331
 				xmax = 651.361
 				text = "g"
-			intervals [123]:
+			intervals [75]:
 				xmin = 651.361
-				xmax = 663.59
-				text = ""
-			intervals [124]:
-				xmin = 663.59
-				xmax = 663.63
-				text = "g"
-			intervals [125]:
-				xmin = 663.63
 				xmax = 688.366
 				text = ""
-			intervals [126]:
+			intervals [76]:
 				xmin = 688.366
 				xmax = 688.436
 				text = "g"
-			intervals [127]:
+			intervals [77]:
 				xmin = 688.436
 				xmax = 700.388
 				text = ""
-			intervals [128]:
+			intervals [78]:
 				xmin = 700.388
 				xmax = 700.528
 				text = "g"
-			intervals [129]:
+			intervals [79]:
 				xmin = 700.528
 				xmax = 725.893
 				text = ""
-			intervals [130]:
+			intervals [80]:
 				xmin = 725.893
 				xmax = 725.963
 				text = "g"
-			intervals [131]:
+			intervals [81]:
 				xmin = 725.963
-				xmax = 728.328
-				text = ""
-			intervals [132]:
-				xmin = 728.328
-				xmax = 728.408
-				text = "g"
-			intervals [133]:
-				xmin = 728.408
-				xmax = 758.543
-				text = ""
-			intervals [134]:
-				xmin = 758.543
-				xmax = 758.593
-				text = "g"
-			intervals [135]:
-				xmin = 758.593
 				xmax = 759.233
 				text = ""
-			intervals [136]:
+			intervals [82]:
 				xmin = 759.233
 				xmax = 759.273
 				text = "g"
-			intervals [137]:
+			intervals [83]:
 				xmin = 759.273
 				xmax = 770.16
 				text = ""
-			intervals [138]:
+			intervals [84]:
 				xmin = 770.16
 				xmax = 770.24
 				text = "g"
-			intervals [139]:
+			intervals [85]:
 				xmin = 770.24
 				xmax = 771.79
 				text = ""
-			intervals [140]:
+			intervals [86]:
 				xmin = 771.79
 				xmax = 771.86
 				text = "g"
-			intervals [141]:
+			intervals [87]:
 				xmin = 771.86
 				xmax = 796.47
 				text = ""
-			intervals [142]:
+			intervals [88]:
 				xmin = 796.47
 				xmax = 796.55
 				text = "g"
-			intervals [143]:
+			intervals [89]:
 				xmin = 796.55
-				xmax = 801.444
-				text = ""
-			intervals [144]:
-				xmin = 801.444
-				xmax = 801.524
-				text = "g"
-			intervals [145]:
-				xmin = 801.524
 				xmax = 807.235
 				text = ""
-			intervals [146]:
+			intervals [90]:
 				xmin = 807.235
 				xmax = 807.305
 				text = "g"
-			intervals [147]:
+			intervals [91]:
 				xmin = 807.305
-				xmax = 807.605
-				text = ""
-			intervals [148]:
-				xmin = 807.605
-				xmax = 807.635
-				text = "g"
-			intervals [149]:
-				xmin = 807.635
 				xmax = 821.336
 				text = ""
-			intervals [150]:
+			intervals [92]:
 				xmin = 821.336
 				xmax = 821.406
 				text = "g"
-			intervals [151]:
+			intervals [93]:
 				xmin = 821.406
-				xmax = 889.08
-				text = ""
-			intervals [152]:
-				xmin = 889.08
-				xmax = 889.11
-				text = "g"
-			intervals [153]:
-				xmin = 889.11
-				xmax = 895.75
-				text = ""
-			intervals [154]:
-				xmin = 895.75
-				xmax = 895.82
-				text = "k"
-			intervals [155]:
-				xmin = 895.82
 				xmax = 897.42
 				text = ""
-			intervals [156]:
+			intervals [94]:
 				xmin = 897.42
 				xmax = 897.5
 				text = "g"
-			intervals [157]:
+			intervals [95]:
 				xmin = 897.5
 				xmax = 908.533
 				text = ""
-			intervals [158]:
+			intervals [96]:
 				xmin = 908.533
 				xmax = 908.593
 				text = "g"
-			intervals [159]:
+			intervals [97]:
 				xmin = 908.593
 				xmax = 923.926
 				text = ""
-			intervals [160]:
+			intervals [98]:
 				xmin = 923.926
 				xmax = 924.046
 				text = "g"
-			intervals [161]:
+			intervals [99]:
 				xmin = 924.046
 				xmax = 932.688
 				text = ""
-			intervals [162]:
+			intervals [100]:
 				xmin = 932.688
 				xmax = 932.748
 				text = "g"
-			intervals [163]:
+			intervals [101]:
 				xmin = 932.748
 				xmax = 958.405
 				text = ""
-			intervals [164]:
+			intervals [102]:
 				xmin = 958.405
 				xmax = 958.455
 				text = "g"
-			intervals [165]:
+			intervals [103]:
 				xmin = 958.455
 				xmax = 973.032
 				text = ""
-			intervals [166]:
+			intervals [104]:
 				xmin = 973.032
 				xmax = 973.062
 				text = "g"
-			intervals [167]:
+			intervals [105]:
 				xmin = 973.062
 				xmax = 975.421
 				text = ""
-			intervals [168]:
+			intervals [106]:
 				xmin = 975.421
 				xmax = 975.481
 				text = "g"
-			intervals [169]:
+			intervals [107]:
 				xmin = 975.481
-				xmax = 978.932
-				text = ""
-			intervals [170]:
-				xmin = 978.932
-				xmax = 978.972
-				text = "g"
-			intervals [171]:
-				xmin = 978.972
 				xmax = 983.583
 				text = ""
-			intervals [172]:
+			intervals [108]:
 				xmin = 983.583
 				xmax = 983.643
 				text = "g"
-			intervals [173]:
+			intervals [109]:
 				xmin = 983.643
 				xmax = 985.919
 				text = ""
-			intervals [174]:
+			intervals [110]:
 				xmin = 985.919
 				xmax = 985.979
 				text = "k"
-			intervals [175]:
+			intervals [111]:
 				xmin = 985.979
 				xmax = 995.05
 				text = ""
-			intervals [176]:
+			intervals [112]:
 				xmin = 995.05
 				xmax = 995.14
 				text = "g"
-			intervals [177]:
+			intervals [113]:
 				xmin = 995.14
 				xmax = 1000.028
 				text = ""
-			intervals [178]:
+			intervals [114]:
 				xmin = 1000.028
 				xmax = 1000.088
 				text = "g"
-			intervals [179]:
+			intervals [115]:
 				xmin = 1000.088
 				xmax = 1014.527
 				text = ""
-			intervals [180]:
+			intervals [116]:
 				xmin = 1014.527
 				xmax = 1014.587
 				text = "g"
-			intervals [181]:
+			intervals [117]:
 				xmin = 1014.587
 				xmax = 1023.497
 				text = ""
-			intervals [182]:
+			intervals [118]:
 				xmin = 1023.497
 				xmax = 1023.597
 				text = "k"
-			intervals [183]:
+			intervals [119]:
 				xmin = 1023.597
-				xmax = 1026.862
-				text = ""
-			intervals [184]:
-				xmin = 1026.862
-				xmax = 1026.952
-				text = "g"
-			intervals [185]:
-				xmin = 1026.952
 				xmax = 1029.948
 				text = ""
-			intervals [186]:
+			intervals [120]:
 				xmin = 1029.948
 				xmax = 1030.018
 				text = "g"
-			intervals [187]:
+			intervals [121]:
 				xmin = 1030.018
-				xmax = 1031.278
-				text = ""
-			intervals [188]:
-				xmin = 1031.278
-				xmax = 1031.348
-				text = "k"
-			intervals [189]:
-				xmin = 1031.348
-				xmax = 1036.824
-				text = ""
-			intervals [190]:
-				xmin = 1036.824
-				xmax = 1036.874
-				text = "g"
-			intervals [191]:
-				xmin = 1036.874
-				xmax = 1039.164
-				text = ""
-			intervals [192]:
-				xmin = 1039.164
-				xmax = 1039.234
-				text = "k"
-			intervals [193]:
-				xmin = 1039.234
-				xmax = 1074.0
-				text = ""
-			intervals [194]:
-				xmin = 1074.0
-				xmax = 1074.05
-				text = "g"
-			intervals [195]:
-				xmin = 1074.05
 				xmax = 1078.258
 				text = ""
-			intervals [196]:
+			intervals [122]:
 				xmin = 1078.258
 				xmax = 1078.318
 				text = "g"
-			intervals [197]:
+			intervals [123]:
 				xmin = 1078.318
 				xmax = 1079.658
 				text = ""
-			intervals [198]:
+			intervals [124]:
 				xmin = 1079.658
 				xmax = 1079.728
 				text = "k"
-			intervals [199]:
+			intervals [125]:
 				xmin = 1079.728
 				xmax = 1080.468
 				text = ""
-			intervals [200]:
+			intervals [126]:
 				xmin = 1080.468
 				xmax = 1080.528
 				text = "k"
-			intervals [201]:
+			intervals [127]:
 				xmin = 1080.528
-				xmax = 1081.518
-				text = ""
-			intervals [202]:
-				xmin = 1081.518
-				xmax = 1081.568
-				text = "k"
-			intervals [203]:
-				xmin = 1081.568
 				xmax = 1083.75
 				text = ""
-			intervals [204]:
+			intervals [128]:
 				xmin = 1083.75
 				xmax = 1083.78
 				text = "g"
-			intervals [205]:
+			intervals [129]:
 				xmin = 1083.78
 				xmax = 1085.66
 				text = ""
-			intervals [206]:
+			intervals [130]:
 				xmin = 1085.66
 				xmax = 1085.79
 				text = "g"
-			intervals [207]:
+			intervals [131]:
 				xmin = 1085.79
-				xmax = 1086.09
-				text = ""
-			intervals [208]:
-				xmin = 1086.09
-				xmax = 1086.12
-				text = "g"
-			intervals [209]:
-				xmin = 1086.12
-				xmax = 1090.172
-				text = ""
-			intervals [210]:
-				xmin = 1090.172
-				xmax = 1090.222
-				text = "k"
-			intervals [211]:
-				xmin = 1090.222
 				xmax = 1095.033
 				text = ""
-			intervals [212]:
+			intervals [132]:
 				xmin = 1095.033
 				xmax = 1095.113
 				text = "g"
-			intervals [213]:
+			intervals [133]:
 				xmin = 1095.113
-				xmax = 1110.308
-				text = ""
-			intervals [214]:
-				xmin = 1110.308
-				xmax = 1110.368
-				text = "k"
-			intervals [215]:
-				xmin = 1110.368
 				xmax = 1113.081
 				text = ""
-			intervals [216]:
+			intervals [134]:
 				xmin = 1113.081
 				xmax = 1113.121
 				text = "g"
-			intervals [217]:
+			intervals [135]:
 				xmin = 1113.121
-				xmax = 1113.821
-				text = ""
-			intervals [218]:
-				xmin = 1113.821
-				xmax = 1113.921
-				text = "k"
-			intervals [219]:
-				xmin = 1113.921
-				xmax = 1114.811
-				text = ""
-			intervals [220]:
-				xmin = 1114.811
-				xmax = 1114.871
-				text = "k"
-			intervals [221]:
-				xmin = 1114.871
 				xmax = 1114.981
 				text = ""
-			intervals [222]:
+			intervals [136]:
 				xmin = 1114.981
 				xmax = 1115.021
 				text = "k"
-			intervals [223]:
+			intervals [137]:
 				xmin = 1115.021
 				xmax = 1116.281
 				text = ""
-			intervals [224]:
+			intervals [138]:
 				xmin = 1116.281
 				xmax = 1116.311
 				text = "g"
-			intervals [225]:
+			intervals [139]:
 				xmin = 1116.311
-				xmax = 1119.854
-				text = ""
-			intervals [226]:
-				xmin = 1119.854
-				xmax = 1119.884
-				text = "g"
-			intervals [227]:
-				xmin = 1119.884
-				xmax = 1121.204
-				text = ""
-			intervals [228]:
-				xmin = 1121.204
-				xmax = 1121.264
-				text = "k"
-			intervals [229]:
-				xmin = 1121.264
-				xmax = 1129.536
-				text = ""
-			intervals [230]:
-				xmin = 1129.536
-				xmax = 1129.606
-				text = "g"
-			intervals [231]:
-				xmin = 1129.606
 				xmax = 1147.036
 				text = ""
-			intervals [232]:
+			intervals [140]:
 				xmin = 1147.036
 				xmax = 1147.066
 				text = "g"
-			intervals [233]:
+			intervals [141]:
 				xmin = 1147.066
 				xmax = 1169.616
 				text = ""
-			intervals [234]:
+			intervals [142]:
 				xmin = 1169.616
 				xmax = 1169.696
 				text = "g"
-			intervals [235]:
+			intervals [143]:
 				xmin = 1169.696
-				xmax = 1169.786
-				text = ""
-			intervals [236]:
-				xmin = 1169.786
-				xmax = 1169.826
-				text = "k"
-			intervals [237]:
-				xmin = 1169.826
 				xmax = 1172.657
 				text = ""
-			intervals [238]:
+			intervals [144]:
 				xmin = 1172.657
 				xmax = 1172.717
 				text = "g"
-			intervals [239]:
+			intervals [145]:
 				xmin = 1172.717
 				xmax = 1184.575
 				text = ""
-			intervals [240]:
+			intervals [146]:
 				xmin = 1184.575
 				xmax = 1184.635
 				text = "g"
-			intervals [241]:
+			intervals [147]:
 				xmin = 1184.635
 				xmax = 1185.425
 				text = ""
-			intervals [242]:
+			intervals [148]:
 				xmin = 1185.425
 				xmax = 1185.655
 				text = "g"
-			intervals [243]:
+			intervals [149]:
 				xmin = 1185.655
 				xmax = 1189.195
 				text = ""
-			intervals [244]:
+			intervals [150]:
 				xmin = 1189.195
 				xmax = 1189.255
 				text = "g"
-			intervals [245]:
+			intervals [151]:
 				xmin = 1189.255
 				xmax = 1202.357
 				text = ""
-			intervals [246]:
+			intervals [152]:
 				xmin = 1202.357
 				xmax = 1202.437
 				text = "g"
-			intervals [247]:
+			intervals [153]:
 				xmin = 1202.437
 				xmax = 1202.707
 				text = ""
-			intervals [248]:
+			intervals [154]:
 				xmin = 1202.707
 				xmax = 1202.777
 				text = "g"
-			intervals [249]:
+			intervals [155]:
 				xmin = 1202.777
 				xmax = 1224.148
 				text = ""
-			intervals [250]:
+			intervals [156]:
 				xmin = 1224.148
 				xmax = 1224.248
 				text = "g"
-			intervals [251]:
+			intervals [157]:
 				xmin = 1224.248
 				xmax = 1235.364
 				text = ""
-			intervals [252]:
+			intervals [158]:
 				xmin = 1235.364
 				xmax = 1235.424
 				text = "g"
-			intervals [253]:
+			intervals [159]:
 				xmin = 1235.424
 				xmax = 1250.384
 				text = ""
-			intervals [254]:
+			intervals [160]:
 				xmin = 1250.384
 				xmax = 1250.434
 				text = "k"
-			intervals [255]:
+			intervals [161]:
 				xmin = 1250.434
 				xmax = 1268.277
 				text = ""
-			intervals [256]:
+			intervals [162]:
 				xmin = 1268.277
 				xmax = 1268.327
 				text = "k"
-			intervals [257]:
+			intervals [163]:
 				xmin = 1268.327
 				xmax = 1268.997
 				text = ""
-			intervals [258]:
+			intervals [164]:
 				xmin = 1268.997
 				xmax = 1269.067
 				text = "g"
-			intervals [259]:
+			intervals [165]:
 				xmin = 1269.067
 				xmax = 1270.317
 				text = ""
-			intervals [260]:
+			intervals [166]:
 				xmin = 1270.317
 				xmax = 1270.387
 				text = "k"
-			intervals [261]:
+			intervals [167]:
 				xmin = 1270.387
 				xmax = 1271.557
 				text = ""
-			intervals [262]:
+			intervals [168]:
 				xmin = 1271.557
 				xmax = 1271.627
 				text = "g"
-			intervals [263]:
+			intervals [169]:
 				xmin = 1271.627
-				xmax = 1271.917
-				text = ""
-			intervals [264]:
-				xmin = 1271.917
-				xmax = 1271.977
-				text = "gw"
-			intervals [265]:
-				xmin = 1271.977
 				xmax = 1273.837
 				text = ""
-			intervals [266]:
+			intervals [170]:
 				xmin = 1273.837
 				xmax = 1273.867
 				text = "g"
-			intervals [267]:
+			intervals [171]:
 				xmin = 1273.867
 				xmax = 1274.397
 				text = ""
-			intervals [268]:
+			intervals [172]:
 				xmin = 1274.397
 				xmax = 1274.467
 				text = "k"
-			intervals [269]:
+			intervals [173]:
 				xmin = 1274.467
-				xmax = 1275.327
-				text = ""
-			intervals [270]:
-				xmin = 1275.327
-				xmax = 1275.377
-				text = "g"
-			intervals [271]:
-				xmin = 1275.377
-				xmax = 1277.557
-				text = ""
-			intervals [272]:
-				xmin = 1277.557
-				xmax = 1277.617
-				text = "k"
-			intervals [273]:
-				xmin = 1277.617
-				xmax = 1314.41
-				text = ""
-			intervals [274]:
-				xmin = 1314.41
-				xmax = 1314.44
-				text = "g"
-			intervals [275]:
-				xmin = 1314.44
-				xmax = 1318.33
-				text = ""
-			intervals [276]:
-				xmin = 1318.33
-				xmax = 1318.37
-				text = "g"
-			intervals [277]:
-				xmin = 1318.37
-				xmax = 1343.97
-				text = ""
-			intervals [278]:
-				xmin = 1343.97
-				xmax = 1344.02
-				text = "gw"
-			intervals [279]:
-				xmin = 1344.02
-				xmax = 1348.5
-				text = ""
-			intervals [280]:
-				xmin = 1348.5
-				xmax = 1348.53
-				text = "g"
-			intervals [281]:
-				xmin = 1348.53
 				xmax = 1351.037
 				text = ""
-			intervals [282]:
+			intervals [174]:
 				xmin = 1351.037
 				xmax = 1351.167
 				text = "g"
-			intervals [283]:
+			intervals [175]:
 				xmin = 1351.167
-				xmax = 1353.237
-				text = ""
-			intervals [284]:
-				xmin = 1353.237
-				xmax = 1353.267
-				text = "g"
-			intervals [285]:
-				xmin = 1353.267
-				xmax = 1360.191
-				text = ""
-			intervals [286]:
-				xmin = 1360.191
-				xmax = 1360.241
-				text = "g"
-			intervals [287]:
-				xmin = 1360.241
-				xmax = 1364.851
-				text = ""
-			intervals [288]:
-				xmin = 1364.851
-				xmax = 1364.921
-				text = "g"
-			intervals [289]:
-				xmin = 1364.921
 				xmax = 1367.201
 				text = ""
-			intervals [290]:
+			intervals [176]:
 				xmin = 1367.201
 				xmax = 1367.241
 				text = "g"
-			intervals [291]:
+			intervals [177]:
 				xmin = 1367.241
-				xmax = 1372.561
-				text = ""
-			intervals [292]:
-				xmin = 1372.561
-				xmax = 1372.591
-				text = "g"
-			intervals [293]:
-				xmin = 1372.591
-				xmax = 1374.311
-				text = ""
-			intervals [294]:
-				xmin = 1374.311
-				xmax = 1374.341
-				text = "g"
-			intervals [295]:
-				xmin = 1374.341
-				xmax = 1379.672
-				text = ""
-			intervals [296]:
-				xmin = 1379.672
-				xmax = 1379.702
-				text = "g"
-			intervals [297]:
-				xmin = 1379.702
-				xmax = 1384.354
-				text = ""
-			intervals [298]:
-				xmin = 1384.354
-				xmax = 1384.424
-				text = "g"
-			intervals [299]:
-				xmin = 1384.424
-				xmax = 1408.057
-				text = ""
-			intervals [300]:
-				xmin = 1408.057
-				xmax = 1408.087
-				text = "g"
-			intervals [301]:
-				xmin = 1408.087
-				xmax = 1409.927
-				text = ""
-			intervals [302]:
-				xmin = 1409.927
-				xmax = 1409.967
-				text = "g"
-			intervals [303]:
-				xmin = 1409.967
 				xmax = 1413.136
 				text = ""
-			intervals [304]:
+			intervals [178]:
 				xmin = 1413.136
 				xmax = 1413.196
 				text = "g"
-			intervals [305]:
+			intervals [179]:
 				xmin = 1413.196
 				xmax = 1415.797
 				text = ""
-			intervals [306]:
+			intervals [180]:
 				xmin = 1415.797
 				xmax = 1415.847
 				text = "g"
-			intervals [307]:
+			intervals [181]:
 				xmin = 1415.847
 				xmax = 1430.067
 				text = ""
-			intervals [308]:
+			intervals [182]:
 				xmin = 1430.067
 				xmax = 1430.147
 				text = "g"
-			intervals [309]:
+			intervals [183]:
 				xmin = 1430.147
 				xmax = 1432.247
 				text = ""
-			intervals [310]:
+			intervals [184]:
 				xmin = 1432.247
 				xmax = 1432.287
 				text = "k"
-			intervals [311]:
+			intervals [185]:
 				xmin = 1432.287
 				xmax = 1464.532
 				text = ""
-			intervals [312]:
+			intervals [186]:
 				xmin = 1464.532
 				xmax = 1464.622
 				text = "g"
-			intervals [313]:
+			intervals [187]:
 				xmin = 1464.622
 				xmax = 1492.191
 				text = ""
-			intervals [314]:
+			intervals [188]:
 				xmin = 1492.191
 				xmax = 1492.271
 				text = "g"
-			intervals [315]:
+			intervals [189]:
 				xmin = 1492.271
 				xmax = 1496.963
 				text = ""
-			intervals [316]:
+			intervals [190]:
 				xmin = 1496.963
 				xmax = 1497.003
 				text = "g"
-			intervals [317]:
+			intervals [191]:
 				xmin = 1497.003
 				xmax = 1510.473
 				text = ""
-			intervals [318]:
+			intervals [192]:
 				xmin = 1510.473
 				xmax = 1510.543
 				text = "g"
-			intervals [319]:
+			intervals [193]:
 				xmin = 1510.543
 				xmax = 1511.947
 				text = ""
-			intervals [320]:
+			intervals [194]:
 				xmin = 1511.947
 				xmax = 1512.017
 				text = "k"
-			intervals [321]:
+			intervals [195]:
 				xmin = 1512.017
 				xmax = 1513.317
 				text = ""
-			intervals [322]:
+			intervals [196]:
 				xmin = 1513.317
 				xmax = 1513.377
 				text = "g"
-			intervals [323]:
+			intervals [197]:
 				xmin = 1513.377
 				xmax = 1514.957
 				text = ""
-			intervals [324]:
+			intervals [198]:
 				xmin = 1514.957
 				xmax = 1514.987
 				text = "k"
-			intervals [325]:
+			intervals [199]:
 				xmin = 1514.987
 				xmax = 1524.95
 				text = ""
-			intervals [326]:
+			intervals [200]:
 				xmin = 1524.95
 				xmax = 1525.02
 				text = "k"
-			intervals [327]:
+			intervals [201]:
 				xmin = 1525.02
 				xmax = 1528.64
 				text = ""
-			intervals [328]:
+			intervals [202]:
 				xmin = 1528.64
 				xmax = 1528.73
 				text = "g"
-			intervals [329]:
+			intervals [203]:
 				xmin = 1528.73
 				xmax = 1529.542
 				text = ""
-			intervals [330]:
+			intervals [204]:
 				xmin = 1529.542
 				xmax = 1529.622
 				text = "g"
-			intervals [331]:
+			intervals [205]:
 				xmin = 1529.622
 				xmax = 1533.96825
 				text = ""

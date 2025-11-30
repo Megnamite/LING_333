@@ -31,7 +31,7 @@ def getIsolatedTokens(filepath, csvfilepath, tgout):
     dictWriter.writeheader()
     #Initialising variables
     vowels = 'ioaeuIOAEU'
-    excludedTargets = ['i','o','a','e','u','I','O','A','E','U', 'spn', 'ng', 'n']
+    excludedTargets = ['i','o','a','e','u','I','O','A','E','U', 'spn', 'ng', 'n', 'm']
     kept_intervals = []
     targets = ['k', 'g', 'kw', 'gw', 'K', 'G']
     kTally = 0
@@ -83,16 +83,17 @@ def getIsolatedTokens(filepath, csvfilepath, tgout):
     f.close()
 
 #Original filepath, csv output, and new textgrid output
-path_to_input = r"D:\UBC Coding Environment\VIsual Studio\LING_333-1\WIP\SpiCE Textgrids"
+path_to_input = r"D:\UBC Coding Environment\VIsual Studio\LING_333-1\333_Final_Project\SpiCE Textgrids"
 
 
 tg_input_df = dir_to_df(path_to_input,
+                    fnpat = ".TextGrid",
                     addcols = ["dirname", "barename", "ext"])
 tg_input_df.head()
 #tg_input_df["dirname"][0]
-filepath = f"{str(tg_input_df["dirname"][0])}\{str(tg_input_df["barename"][0])[0:5]}\{str(tg_input_df["fname"][0])}"
-csvfilepath = str(str(tg_input_df["dirname"][0]) + "\\" + str(tg_input_df["barename"][0])[0:5] + "\\" + str(tg_input_df["barename"][0])[0:5]) + "_C.csv"
-tgout = str(str(tg_input_df["dirname"][0]) + "\\" + str(tg_input_df["barename"][0])[0:5] + "\\" + str(tg_input_df["barename"][0])[0:5]) + "_C.Textgrid"
+filepath = ""
+csvfilepath = ""
+tgout = ""
 print(filepath)
 print(csvfilepath)
 print(tgout)
