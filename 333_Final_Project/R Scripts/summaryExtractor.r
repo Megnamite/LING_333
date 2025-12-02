@@ -1,5 +1,5 @@
 library(tidyverse)
-pathToCSV <- "C:\\Users\\Maria\\Documents\\UNI\\Visual Studio UBC Workspace\\LING333GithubClone\\LING_333\\333_Final_Project\\data\\SpiCE_DrVot_Output_CSV.csv"
+pathToCSV <- "D:\\UBC Coding Environment\\VIsual Studio\\LING_333-1\\333_Final_Project\\data\\manual sanitised data\\manual_data_presanitise.csv"
 vot_data <- read.csv(pathToCSV)
 
 cleaneddata <- vot_data%>%
