@@ -1,5 +1,5 @@
 library(tidyverse)
-pathToCSV <- "D:\\UBC Coding Environment\\VIsual Studio\\LING_333-1\\333_Final_Project\\data\\manual sanitised data\\manual_data_presanitise.csv"
+pathToCSV <- "D:\\UBC Coding Environment\\VIsual Studio\\LING_333-1\\333_Final_Project\\data\\manual_data_presanitise.csv"
 vot_data <- read.csv(pathToCSV)
 
 cleaneddata <- vot_data%>%
@@ -17,6 +17,7 @@ can_gw <- cleaneddata$vot_ms[cleaneddata$phone == "gw"]
 eng_k  <- cleaneddata$vot_ms[cleaneddata$phone == "K"]
 eng_g  <- cleaneddata$vot_ms[cleaneddata$phone == "G"]
 
+write.csv(cleaneddata, file= "manualsanitised.csv", row.names=FALSE)
 write.csv(can_k, file = "can_k.csv", row.names= FALSE)
 write.csv(can_kw, file = "can_kw.csv", row.names= FALSE)
 write.csv(can_gw, file = "can_gw.csv", row.names= FALSE)
