@@ -5,11 +5,11 @@ import pandas as pd
 # -----------------------------
 # USER SETTINGS
 # -----------------------------
-FOLDER = r"D:\UBC Coding Environment\VIsual Studio\LING_333-1\333_Final_Project\data\manual data"     # folder containing all .TextGrid files
+FOLDER = r"D:\UBC Coding Environment\VIsual Studio\LING_333-1\333_Final_Project\data\manual textgrids"     # folder containing all .TextGrid files
 TOKEN_TIER = "k isolation"      # tier where lexical tokens (k, g, kw, gw…) appear
 VOT_TIER = "vot"         # tier that contains VOT intervals
 
-# tokens of interest → output file names
+# tokens of interest -> output file names
 TARGET_TOKENS = {
     "k":      "k.csv",
     "g":      "g.csv",
