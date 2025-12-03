@@ -1,4 +1,4 @@
-"Source.Name","speaker","language","clip","phone","vot_ms"
+Source.Name,speaker,language,clip,phone,vot_ms
 VF19A_vot.csv,VF19A,C,103,k,88
 VF19A_vot.csv,VF19A,C,112,k,81
 VF19A_vot.csv,VF19A,C,127,g,70
@@ -7,7 +7,7 @@ VF19A_vot.csv,VF19A,C,42,g,13
 VF19A_vot.csv,VF19A,C,64,gw,26
 VF19A_vot.csv,VF19A,C,74,k,79
 VF19A_vot.csv,VF19A,C,92,g,36
-VF19A_vot.csv,VF19A,E,103,K,45
+VF19A_vot.csv,VF19A,E,103,K,85
 VF19A_vot.csv,VF19A,E,12,K,67
 VF19A_vot.csv,VF19A,E,39,K,72
 VF19A_vot.csv,VF19A,E,50,K,96

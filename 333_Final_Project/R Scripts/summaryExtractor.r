@@ -32,8 +32,11 @@ for (x in seq_len(nrow(votcleaneddata))){
 head(df)
 write.csv(df, file="tester.csv", row.names=FALSE)
 
-df2 = data.frame(mat)
-drvotvalues <- read.csv(r"(D:\UBC Coding Environment\VIsual Studio\LING_333-1\333_Final_Project\data\drvot sanitised data\drvot_ttest_values.csv)")
+
+drvotvalues <- read.csv(r"(333_Final_Project/data/pairedtestvalues/drvot_ttest_values.csv)")
+manualcleaneddata <- read.csv(r"(D:\UBC Coding Environment\VIsual Studio\LING_333-1\333_Final_Project\data\manual sanitised data\manualsanitisedwithclips.csv)")
+
+df2 <- manualcleaneddata[0, ]
 
 for (x in seq_len(nrow(manualcleaneddata))){
   for (n in seq_len(nrow(drvotvalues))){
@@ -41,7 +44,7 @@ for (x in seq_len(nrow(manualcleaneddata))){
     && manualcleaneddata$language[x] == drvotvalues$language[n] 
     && manualcleaneddata$clip[x] == drvotvalues$clip[n] 
     && manualcleaneddata$phone[x] == drvotvalues$phone[n]){
-      df2 = rbind(df, drvotvalues[x, ])
+      df2 = rbind(df2, manualcleaneddata[x, ])
     }
   }
 }
