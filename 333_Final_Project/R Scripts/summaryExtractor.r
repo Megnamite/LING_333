@@ -65,3 +65,38 @@ write.csv(can_gw, file = "can_gw.csv", row.names= FALSE)
 write.csv(can_g, file = "can_g.csv", row.names= FALSE)
 write.csv(eng_g, file = "eng_g.csv", row.names= FALSE)
 write.csv(eng_k, file = "eng_k.csv", row.names= FALSE)
+
+
+library(tidyverse)
+pathToCSVA <- r"(C:\Users\Maria\Documents\UNI\Visual Studio UBC Workspace\LING333GithubClone\LING_333\333_Final_Project\data\pairedtestvalues\manualsanioverlap.csv)"
+man_dat <- read.csv(pathToCSVA)
+can_k_int  <- man_dat$vot_ms[man_dat$phone == "k"]
+can_g_int  <- man_dat$vot_ms[man_dat$phone == "g"]
+can_kw_int <- man_dat$vot_ms[man_dat$phone == "kw"]
+can_gw_int <- man_dat$vot_ms[man_dat$phone == "gw"]
+eng_k_int  <- man_dat$vot_ms[man_dat$phone == "K"]
+eng_g_int  <- man_dat$vot_ms[man_dat$phone == "G"]
+
+length(can_k_int)
+length(can_g_int)
+length(can_kw_int)
+length(can_gw_int)
+length(eng_k_int)
+length(eng_g_int)
+
+pathtodrvot <- r"(C:\Users\Maria\Documents\UNI\Visual Studio UBC Workspace\LING333GithubClone\LING_333\333_Final_Project\data\drvot sanitised data\drvotsanitised.csv)"
+drvotdat <- read.csv(pathtodrvot)
+
+can_k_vot_average <- drvotdat$vot_ms[drvotdat$phone == 'k']
+can_g_vot_average <- drvotdat$vot_ms[drvotdat$phone == 'g']
+can_gw_vot_average <- drvotdat$vot_ms[drvotdat$phone == 'gw']
+can_kw_vot_average <- drvotdat$vot_ms[drvotdat$phone == 'kw']
+eng_g_vot_average <- drvotdat$vot_ms[drvotdat$phone == 'G']
+eng_k_vot_average <- drvotdat$vot_ms[drvotdat$phone == 'K']
+
+mean(can_k_vot_average)
+mean(can_g_vot_average)
+mean(can_gw_vot_average)
+mean(can_kw_vot_average)
+mean(eng_g_vot_average)
+mean(eng_k_vot_average)

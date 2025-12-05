@@ -85,4 +85,4 @@ df_all = pd.DataFrame(results)
 for speaker, group in df_all.groupby("speaker"): 
     out_path = base_path / speaker / f"{speaker}_vot.csv"
     group.to_csv(out_path, index=False)
-    print(f"Saved → {out_path}")
+    print(f"Saved to {out_path}")
