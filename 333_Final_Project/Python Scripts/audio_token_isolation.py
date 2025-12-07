@@ -1,3 +1,11 @@
+'''
+Docstring for 333_Final_Project.Python Scripts.audio_token_isolation
+File Name: audio_token_isolation.py
+Last Changed: 26/11/2025
+Description: Based on textgrid tiers isolates words carrying desired tokens and exports them 
+-> as seperate audio files using pytorch
+'''
+
 import textgrid
 import csv
 from fileorganize import dir_to_df
@@ -104,7 +112,7 @@ for n in range(len(tg_input_df)):
             if "_C" in audio_input_df["barename"][n]:
                 outputpath = f"{audio_clip_file}\\{str(audio_input_df['barename'][n])[0:5]}_C"
                 
-                if not os.path.isdir(outputpath):
+                if not os.path.isdir(outputpath): # Make folder for output clips
                     os.makedirs(outputpath)
                     
                 outputfile = f"{outputpath}\\{str(audio_input_df['barename'][n])[0:5]}_C_clip({counter}).wav"

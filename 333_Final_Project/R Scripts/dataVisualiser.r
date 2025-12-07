@@ -7,10 +7,10 @@ man_df <- read.csv(r"(D:\UBC Coding Environment\VIsual Studio\LING_333-1\333_Fin
 head(dr_df)
 
 ggplot(dr_df, aes(x = phone, y = vot_ms)) +
-geom_boxplot()
+  geom_boxplot()
 
 ggplot(man_df, aes(x = phone, y = vot_ms)) +
-geom_boxplot()
+  geom_boxplot()
 
 
 #####################
@@ -20,16 +20,38 @@ geom_boxplot()
 #####################
 library(tidyverse)
 inputcsv <- read.csv(r"(D:\UBC Coding Environment\VIsual Studio\LING_333-1\333_Final_Project\data\drvot sanitised data\drvotsanitised.csv)")
-unpairedttestvalues <- filter(unpairedttestvalues, speaker == "VM25B")
+unpairedttestvalues <- filter(inputcsv, speaker == "VM25B")
 speaker_canto_k <- unpairedttestvalues$vot_ms[unpairedttestvalues$phone == "k"]
 speaker_canto_g <- unpairedttestvalues$vot_ms[unpairedttestvalues$phone == "g"]
 speaker_eng_k <- unpairedttestvalues$vot_ms[unpairedttestvalues$phone == "K"]
 speaker_eng_g <- unpairedttestvalues$vot_ms[unpairedttestvalues$phone == "G"]
 
-length(speaker_canto_k)
-length(speaker_canto_g)
-length(speaker_eng_k)
-length(speaker_eng_g)
+shapiro.test(speaker_canto_g)
+shapiro.test(speaker_canto_k)
+shapiro.test(speaker_eng_g)
+shapiro.test(speaker_eng_k)
+
+cank = unpairedttestvalues[unpairedttestvalues$phone == "k",]
+cang = unpairedttestvalues[unpairedttestvalues$phone == "g",]
+engk = unpairedttestvalues[unpairedttestvalues$phone == "K",]
+engg = unpairedttestvalues[unpairedttestvalues$phone == "G",]
+
+windows();
+ggplot(cank, aes(x = vot_ms)) +
+    geom_density() +
+    ggtitle("Canto /k/")
+windows();
+ggplot(cang, aes(x = vot_ms)) +
+    geom_density() +
+    ggtitle("speaker_canto_g")
+windows();
+ggplot(engk, aes(x = vot_ms)) +
+    geom_density() +
+    ggtitle("speaker_eng_k")
+windows();
+ggplot(engg, aes(x = vot_ms)) +
+    geom_density() +
+    ggtitle("speaker_eng_g")
 
 k_ttest_result <- t.test(speaker_canto_k, speaker_eng_k, paired = FALSE)
 g_ttest_result <- t.test(speaker_canto_g, speaker_eng_g, paired = FALSE)
@@ -55,6 +77,16 @@ length(speaker_canto_g)
 length(speaker_eng_k)
 length(speaker_eng_g)
 
+shapiro.test(speaker_canto_g)
+shapiro.test(speaker_canto_k)
+shapiro.test(speaker_eng_g)
+shapiro.test(speaker_eng_k)
+
+cank = unpairedttestvalues[unpairedttestvalues$phone == "k",]
+cang = unpairedttestvalues[unpairedttestvalues$phone == "g",]
+engk = unpairedttestvalues[unpairedttestvalues$phone == "K",]
+engg = unpairedttestvalues[unpairedttestvalues$phone == "G",]
+
 k_ttest_result <- t.test(speaker_canto_k, speaker_eng_k, paired = FALSE)
 g_ttest_result <- t.test(speaker_canto_g, speaker_eng_g, paired = FALSE)
 
@@ -78,11 +110,10 @@ speaker_canto_k <- unpairedttestvalues[unpairedttestvalues$phone == "k",]
 speaker_canto_g <- unpairedttestvalues[unpairedttestvalues$phone == "g",]
 speaker_eng_k <- unpairedttestvalues[unpairedttestvalues$phone == "K",]
 speaker_eng_g <- unpairedttestvalues[unpairedttestvalues$phone == "G",]
+speaker_eng_kw <- unpairedttestvalues[unpairedttestvalues$phone == "kw",]
 
-
-head(speaker_canto_k)
 
 windows();
-ggplot(speaker_canto_k, aes(x = vot_ms)) +
+ggplot(speaker_eng_kw, aes(x = vot_ms)) +
     geom_density() +
-    ggtitle("Canto /k/")
+    ggtitle("Canto /kw/")

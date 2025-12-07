@@ -1,3 +1,9 @@
+'''
+Docstring for 333_Final_Project.Python Scripts.drvot_summary_tabulator
+File Name: drvot_summary_tabulator.py
+Last Updated: 5/12/2025
+Description: Creates a lookup table to transfer dr.vot's summary.csv to a more readable format for data sanitation
+'''
 import textgrid
 import pandas as pd
 import re
@@ -10,7 +16,7 @@ path_to_tg_input = base_path / "out_tg"
 path_to_csv_input = base_path
 
 
-# create pands dataframes
+# create pandas dataframes
 out_tg_input = dir_to_df(path_to_tg_input, fnpat=".TextGrid", addcols=["dirname", "barename", "ext"])
 can_csv_input = dir_to_df(path_to_csv_input, fnpat="_C.csv", addcols=["dirname", "barename", "ext"])
 eng_csv_input = dir_to_df(path_to_csv_input, fnpat="_E.csv", addcols=["dirname", "barename", "ext"])
@@ -32,9 +38,9 @@ def parse_tg_name(basename):
     return speaker, lang, clip
 
 
-# -----------------------------
-# Make lookup for CSV files
-# -----------------------------
+
+# Make lookup table for CSV files
+
 def build_csv_lookup(df):
     lookup = {}
     for _, row in df.iterrows():
@@ -48,12 +54,11 @@ csv_lookup_C = build_csv_lookup(can_csv_input)
 csv_lookup_E = build_csv_lookup(eng_csv_input)
 
 
-# -----------------------------
+
 # Process all TextGrids
-# -----------------------------
 results = []
 
-for _, row in out_tg_input.iterrows():
+for _, row in out_tg_input.iterrows(): 
     basename = row["barename"]
     speaker, lang, clip = parse_tg_name(basename)
 

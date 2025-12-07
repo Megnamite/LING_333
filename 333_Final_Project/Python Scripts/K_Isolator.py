@@ -1,3 +1,9 @@
+'''
+Docstring for 333_Final_Project.Python Scripts.K_Isolator
+File Name: K_Isolator.py
+Last Updated: 12/6/2025
+Description: Goes through a textgrid, creating a new tier for isolated tokens based on preset criteria.
+'''
 import textgrid
 import csv
 from fileorganize import dir_to_df
@@ -13,7 +19,7 @@ def getContainingWord(phone_interval, word_tier):
     returning the index of the word interval containing the phone. 
     The function returns an integer index of the word containing the specified phone
 
-    :phone_interval: is a praat interval tier taken from the textgrid package containing your phones.
+    :phone_interval: is a praat interval taken from the textgrid package containing your phones.
     :word_tier: is a praat interval tier taken from the textgrid package containing your words.
     """
     s, e = phone_interval.minTime, phone_interval.maxTime
@@ -23,12 +29,21 @@ def getContainingWord(phone_interval, word_tier):
     return None
 
 def getIsolatedTokens(filepath, csvfilepath, tgout):
+    '''
+    Docstring for getIsolatedTokens
+    
+    :param filepath: Input Textgrid Filepath
+    :param csvfilepath: Output CSV filepath
+    :param tgout: Output textgrid filepath
+    '''
+    
     tg = textgrid.TextGrid.fromFile(filepath)
     f = open(csvfilepath, 'w', newline = '')#Open csv file, create new if not available
 
     fieldname = ['phone', 'minTime', 'maxTime', 'k total', 'kw total', 'g total', 'gw total']
     dictWriter = csv.DictWriter(f, fieldnames=fieldname)
     dictWriter.writeheader()
+    
     #Initialising variables
     vowels = 'ioaeuIOAEU'
     excludedTargets = ['i','o','a','e','u','I','O','A','E','U', 'spn', 'ng', 'n', 'm']

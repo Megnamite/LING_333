@@ -1,11 +1,15 @@
+'''
+Docstring for 333_Final_Project.Python Scripts.ManualDataTabulation
+Compile manually measured data into a singular CSV.
+'''
+
+
 import os
 import textgrid
 import pandas as pd
 
-# -----------------------------
-# USER SETTINGS
-# -----------------------------
-FOLDER = r"D:\UBC Coding Environment\VIsual Studio\LING_333-1\333_Final_Project\data\manual textgrids"     # folder containing all .TextGrid files
+
+FOLDER = r"D:\UBC Coding Environment\VIsual Studio\LING_333-1\333_Final_Project\data\manual textgrids"    # folder containing all .TextGrid files
 TOKEN_TIER = "k isolation"      # tier where lexical tokens (k, g, kw, gw…) appear
 VOT_TIER = "vot"         # tier that contains VOT intervals
 
@@ -19,9 +23,7 @@ TARGET_TOKENS = {
     "G":      "G_english.csv"
 }
 
-# -----------------------------
-# Initialize result storage
-# -----------------------------
+
 results = {token: [] for token in TARGET_TOKENS}
 
 
@@ -39,9 +41,9 @@ def find_interval_containing(tier, time):
     return None
 
 
-# -----------------------------
+
 # MAIN LOOP
-# -----------------------------
+
 for fname in os.listdir(FOLDER):
     if not fname.endswith(".TextGrid"):
         continue
@@ -51,13 +53,8 @@ for fname in os.listdir(FOLDER):
 
     speaker = extract_speaker_id(fname)
 
-    # fetch tiers
-    try:
-        token_tier = tg.getFirst(TOKEN_TIER)
-        vot_tier = tg.getFirst(VOT_TIER)
-    except:
-        print(f"Missing tier in: {fname}")
-        continue
+    token_tier = tg.getFirst(TOKEN_TIER)
+    vot_tier = tg.getFirst(VOT_TIER)
 
     # loop through all VOT intervals
     for interval in vot_tier.intervals:
@@ -83,9 +80,7 @@ for fname in os.listdir(FOLDER):
                 "file": fname
             })
 
-# -----------------------------
 # SAVE OUTPUT FILES
-# -----------------------------
 for token, rows in results.items():
     df = pd.DataFrame(rows)
     output_name = TARGET_TOKENS[token]

@@ -1,3 +1,7 @@
+'''
+Docstring for 333_Final_Project.Python Scripts.manualclipidentifier
+Used for identifying pairs between manual and automated analysed data, not used.
+'''
 import os
 from textgrid import TextGrid
 import pandas as pd
