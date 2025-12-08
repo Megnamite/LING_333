@@ -158,32 +158,3 @@ eng_g_mean_diff
 shapiro.test(eng_g_mean_diff)
 
 t.test(eng_g_dr$vot_ms, eng_g_man$vot_ms, paired = TRUE)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
