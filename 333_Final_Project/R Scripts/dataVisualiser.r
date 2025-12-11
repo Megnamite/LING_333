@@ -1,12 +1,16 @@
 library(tidyverse)
-install.packages('patchwork')
 library(patchwork)
-
+#citation()
+#citation("tidyverse")
+#citation("patchwork")
+#citation('ggplot2')
+#citation('rstatix')
+citation('car')
 theme_set(theme_bw(base_size = 12)) 
 
 dr_df <- read.csv(r"(D:\UBC Coding Environment\VIsual Studio\LING_333-1\333_Final_Project\data\drvot sanitised data\drvotsanitised.csv)")
-man_df <- read.csv(r"(D:\UBC Coding Environment\VIsual Studio\LING_333-1\333_Final_Project\data\manual sanitised data\manualsanitised.csv)")
-
+#man_df <- read.csv(r"(D:\UBC Coding Environment\VIsual Studio\LING_333-1\333_Final_Project\data\manual sanitised data\manualsanitised.csv)")
+range(dr_df$vot_ms[dr_df$language == "E"])
 head(dr_df)
 
 ggplot(dr_df, aes(x = phone, y = vot_ms)) +
