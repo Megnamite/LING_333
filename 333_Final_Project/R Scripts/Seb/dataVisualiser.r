@@ -1,3 +1,7 @@
+# Author: Sebastiano
+# Date last updated: Dec 14th, 2025
+# Description: Used for creating graphics for data analysis and presentation
+
 library(tidyverse)
 library(patchwork)
 #citation()
@@ -18,7 +22,6 @@ ggplot(dr_df, aes(x = phone, y = vot_ms)) +
 
 ggplot(man_df, aes(x = phone, y = vot_ms)) +
   geom_boxplot()
-
 
 #####################
 #
@@ -160,3 +163,25 @@ for(i in seq_along(femalespeakerlist)){
 windows();
   wrap_plots(femaleimagelist)
   wrap_plots(maleimagelist)
+
+windows();
+newdf <- filter(inputcsv, phone == "k" | phone == "K")
+ggplot(newdf, aes(x = speaker, 
+                  y = vot_ms, 
+                  colour = speaker, 
+                  shape = language)) +
+  geom_point(size = 2, alpha = 0.7, stroke = 1.5) +
+  scale_shape_manual(
+    values = c(E = 16, C = 4)  # 16 = dot, 4 = cross
+  ) +
+  labs(
+    x = "Speaker",
+    y = "VOT (ms)",
+    shape = "Language",
+    colour = "Speaker"
+  ) +
+  theme_bw() +
+  theme(
+    legend.position = "right",
+    axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1)
+  )

@@ -1,3 +1,7 @@
+# Author: Sebastiano
+# Date last updated: Dec 4th, 2025
+# Description: extracts data from the Dr.VOT summary file, sanitises, and cleans 
+
 library(tidyverse)
 pathToCSVA <- r"(D:\UBC Coding Environment\VIsual Studio\LING_333-1\333_Final_Project\data\manual presanitise with clips.csv)"
 pathToCSV <- r"(D:\UBC Coding Environment\VIsual Studio\LING_333-1\333_Final_Project\data\DrVot_Output_presanitise.csv)"

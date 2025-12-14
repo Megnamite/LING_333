@@ -1,3 +1,8 @@
+# Author: Sebastiano
+# Date last updated: Dec 14th, 2025
+# Description: Linear Mixed effect model analysis of the datasets aspirated K tokens, along with residual plots
+
+
 library(tidyverse)
 library(lme4)
 library(lmerTest)

@@ -1,6 +1,13 @@
+
+# 2025-12-01 
+# An attempt at ANOVA -- but (spoilers) we don't meet the parametric assumptions so it doesn't work out at the end 
+# Rhoswen The 
+
+#--------------- 
+
 library(tidyverse)
 
-canto_anova <- read_csv(r"(D:\UBC Coding Environment\VIsual Studio\LING_333-1\333_Final_Project\data\drvot sanitised data\drvotsanitised.csv)")
+canto_anova <- read_csv(file.choose())
 
 canto_anova
 
@@ -17,8 +24,8 @@ anova
 
 # now to do the tidying 
 anova_tidy <- gather(anova, key = 'phone', value = 'vot_ms')
-anova_tidy_minuskw <- anova[anova$phone != "kw",]
-anova_tidy_minuskw
+
+anova_tidy
 
 # We need to meet these next few assumptions to be able to run ANOVA: 
 
@@ -31,21 +38,19 @@ install.packages("car")
 library(car)
 
   # here's the Levene's test 
-#leveneTest(phone - vot_ms, data = anova_tidy)
+leveneTest(phone - vot_ms, data = anova_tidy)
     # why does it say that object 'vot_ms' is not found...? 
     # oh, if I swap it, 'phone' is not found either... 
-
-
-
+  
   # GOD - it was ~, not - 
-leveneTest(vot_ms ~ phone, data = anova_tidy_minuskw)
+leveneTest(vot_ms ~ phone, data = anova_tidy)
 
   # Right, so... apparently, if Pr(>F) AKA p-value is higher than 0.05, we're good. 
       # It means that the variances are approximately equal across the groups. 
     # BUT it's not. It's omega low... < 2.2e-16 ... that's 15 zeroes plus the one before the decimal point. LOL 
 
 # Normality of Residuals --> errors/residuals follow a normal distribution. ---------------------------> FAILED 
-aov_anova <- aov(vot_ms ~ phone, data = anova_tidy_minuskw) # fit ANOVA model 
+aov_anova <- aov(vot_ms ~ phone, data = anova_tidy) # fit ANOVA model 
 
 residuals_aov <- residuals(aov_anova) # extract residuals 
 
@@ -56,8 +61,7 @@ shapiro.test(residuals_aov) # run test for RESIDUALS (not the raw data) for norm
     # But they're not :) because p-value < 2.2e-16 
 
   # might as well see it 
-window();
-  hist(residuals_aov)
+hist(residuals_aov)
     # hey, it looks like a middle finger! It's not even THAT non-normal, come on... 
 
 
@@ -72,3 +76,19 @@ summary(aov_anova)
      # It means that at least one group mean differes from the others... but we don't know which one. 
         # though we can guess. lol 
     # p-value is < 2e-16. But it's not like it is valid. HAHA. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
